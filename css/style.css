@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --padding-container: 80px 0;
+    --color-primary: #f77062;
+    --color-secondary: #1b998b;
+    --color-bg: #fafafa;
+    --align-title: center;
+    --box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+/* *{
+    outline: 3px solid red;
+} */
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+.hero{
+    --padding-container: 0;
+    height: 100vh;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100% );
+}
+
+.hero__main{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.hero__img{
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+
+.hero__picture{
+    max-width: 80%;
+}
+
+.hero__texts{
+    width: 45%;
+    color: #fff;
+}
+
+.hero__title{
+    font-size: 4rem;
+}
+.hero__copy{
+    font-size: 1.5rem;
+    font-weight: 300px;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--color-primary);
+    text-align: var(--align-title);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__img{
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+
+.about__texts{
+    width: 50%;
+    --align-title: left;
+}
+
+.about__paragraph{
+    line-height: 1.5;
+}
+
+.about__cta{
+    display: inline-block;
+    margin-top: 20px;
+    background: var(--color-primary);
+    padding: 20px 40px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Portfolio section */
+
+.portfolio{
+    background: var(--color-bg);
+}
+
+.portfolio__cards{
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.portfolio__card{
+    width: 27%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.portfolio__picture{
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio__text{
+    padding: 30px 20px 40px;
+}
+
+.portfolio__title{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-secondary);
+    margin: 0;
+}
+.portfolio__paragraph{
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.portfolio__cta{
+    display: block;
+    background: var(--color-secondary);
+    padding: 15px 0;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.copy{
+    background: var(--color-primary);
+}
+
+.copy__text{
+    --color-primary: #fff;
+}
+
+.title__margin{
+    margin: 0;
+}
+
+/* Gallery section */
+.gallery__container{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery__picture{
+    width: 30%;
+    height: 250px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+/* Lenguages section */
+
+.lenguages{
+    background: var(--color-bg);
+}
+
+.lenguages__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lenguages__picture{
+    width: 20%;
+    height: 100px;
+}
+
+/* Footer section */
+
+.footer{
+    background: var(--color-primary);
+    color: #fff;
+    text-align: center;
+}
+
+.footer__container{
+    --color-primary: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text{
+    width: 50%;
+}
+
+.footer__icon{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 50%;
+    
+}
+
+.footer__icon.fab{
+    line-height: 60px;
+}
+
+.footer__icon:hover{
+    background: #fff;
+    color: #f77062;
+    cursor: pointer;
+}
+
+.footer__link{
+    display: inline-block;
+    color: #fff;
+    margin: 0 20px;
+    margin-bottom: 15px;
+}
+
+.footer__link:hover{
+    text-decoration: none;
+
+}
+
+.footer__img{
+    margin: 0;
+    width: 35%;
+}
+
+.footer__copy{
+    width: 90%;
+}
+
+@media screen and (max-width: 800px){
+    .hero{
+        height: auto;
+        min-width: 100vw;
+        --padding-container: 40px 0;
+    }
+
+    .hero__main{
+        justify-content: center;
+    }
+
+    .hero__img{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .hero__picture{
+        max-width: 85%;;
+    }
+
+    .hero__texts{
+        width: 100%;
+    }
+
+    .hero__title{
+        font-size: 3.5rem;
+    }
+
+    /* Section about */
+
+    .about__texts{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        --align-title: center;
+    }
+
+    .about__paragraph{
+        text-align: left;
+    }
+
+    .about__img{
+        width: 100%;
+    }
+
+    /* Section portfolio */
+
+    .portfolio__card{
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    /* Section gallery */
+    .gallery__picture{
+        width: 45%;
+    }
+
+    /* Section lenguages */
+    .lenguages__container{
+        justify-content: space-between;
+    }
+    /* Footer */
+
+    .footer__container{
+        flex-direction: column;
+    }
+
+    .footer__img{
+        order: -1;
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .footer__copy{
+        width: 100%;
+    }
+
+    .footer__text{
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width: 550px){
+    .hero__img{
+        width:85%;
+    }
+
+    .hero__picture{
+        width: 100%;
+    }
+
+    .hero__title{
+        font-size: 2.8rem;
+    }
+
+    .about__texts{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 2.2rem;
+    }
+
+    .portfolio__card{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .gallery__picture{
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .lenguages__container{
+        justify-content: space-around;
+    }
+
+    .lenguages__picture{
+        width: 35%;
+        margin-bottom: 30px;
+    }
+
+    .footer__img{
+        width: 90%;
+        max-width: 330px;
+        margin-bottom: 40px;
+    }
+}
